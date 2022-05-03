@@ -7,3 +7,4 @@ Na plataforma crédito ao fotógrafo Lê Minh: (https://www.pexels.com/@minhle17
 
 
 ## EM DESENVOLVIMENTO
+Parte responsiva ainda não implementada.
