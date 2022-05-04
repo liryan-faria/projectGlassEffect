@@ -7,10 +7,10 @@
 }
 
 body {
-    
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url(public/image.jpg);
@@ -22,6 +22,7 @@ body {
 
 .glass {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -31,7 +32,6 @@ body {
     background-position: center;
     clip-path: polygon(5% 30%, 90% 30%, 90% 90%, 5% 90%);
     filter: blur(7px);
-    
 
 }
 
@@ -47,10 +47,10 @@ body {
     font-size: 7em;
     letter-spacing: 0.5em;
     filter: blur(1.3px);
-
+    
 }
 
-.rodape {
+.foot {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -58,9 +58,34 @@ body {
     bottom: 0;
     width: 100%;
     background-color: rgba(247, 241, 241, 0.3);
-    color:rgba(95, 94, 94, 0.795);
     padding-inline-end: 1em;
+    text-decoration: none;
     
+}
 
+.textFoot {
+    backdrop-filter: none;
+    color:rgba(75, 75, 75, 0.7);
+
+}
+
+@media screen and (max-width: 768px) {
+    .glass {
+        clip-path: inset(4em);
+        /*clip-path: polygon(5% 30%, 90% 30%, 90% 90%, 5% 90%);*/
+    }
+
+    .textGlass {
+        font-size: 3.7em;
+    }
+
+    .foot {
+        align-items: center;
+        
+    }
+
+    .textFoot {
+        color:rgb(50, 50, 50)
+    }
 }
 
